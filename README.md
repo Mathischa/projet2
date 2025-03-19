@@ -1,126 +1,121 @@
-📌 Projet Académique & Hedge Fund : Market Making Adaptatif avec Prédiction de la Volatilité (Rough Heston + Deep Learning) 🚀
+# 📌 Market Making Adaptatif avec Prédiction de la Volatilité (Rough Heston + Deep Learning) 🚀
 
-👉 Objectif : Développer une stratégie de market making algorithmique qui ajuste ses prix en fonction de la volatilité future, prédit avec un modèle hybride Rough Heston + IA (Deep Learning, LSTM, Transformers).
+## 🎯 Objectif
+Développer une stratégie de market making algorithmique qui ajuste dynamiquement ses prix en fonction de la volatilité future, prédit avec un modèle hybride **Rough Heston + Deep Learning (LSTM, Transformers)**.
 
-⸻
+## 📌 Pourquoi ce projet est pertinent ?
 
-🔹 1. Pourquoi ce projet est pertinent pour le sujet du professeur ?
+Ce projet intègre trois domaines clés :
 
-Le sujet du professeur exige l’intégration de trois domaines :
-	1.	Programmation Probabiliste
-	2.	Machine Learning
-	3.	Théorie des Jeux
+| **Exigence académique** | **Comment notre projet y répond ?** |
+|-----------------|---------------------------------|
+| **Programmation Probabiliste** | Modèle Rough Heston pour prédire la volatilité future. |
+| **Machine Learning** | LSTM / Transformers pour améliorer la prévision de volatilité. |
+| **Théorie des Jeux** | Market making adaptatif basé sur la minimisation du regret. |
 
-✅ Notre projet coche toutes ces cases :
+🚀 **Un projet académique solide ET applicable en finance de marché !**
 
-Exigence du professeur	Comment notre projet le respecte ?
-Programmation Probabiliste	Modèle Rough Heston pour prédire la volatilité future.
-Machine Learning	LSTM / Transformers pour améliorer la prévision de volatilité.
-Théorie des Jeux	Market making adaptatif basé sur la minimisation du regret.
+---
 
-🔥 C’est un projet académique solide ET utilisable en finance de marché !
+## 🏆 Explication simple du projet
 
-⸻
+📌 **Analogie** : Imagine que tu es un épicier qui vend des bonbons (options SPX) :
+- **S’il fait chaud (marché calme)** → Peu de clients → Prix bas.
+- **S’il fait froid (marché stressé)** → Beaucoup de clients → Prix haut.
+- **Le but est d’anticiper la météo (volatilité future) pour fixer les bons prix avant les autres !**
 
-🔹 2. Explication simple du projet (Analogie)
+💡 **Notre solution** :
+- 🧠 **Prédire la volatilité** avec **Deep Learning + Rough Heston**.
+- 💰 **Utiliser ces prévisions** pour ajuster dynamiquement les prix des options.
+- 🎯 **Optimiser la stratégie** de market making pour capturer du PnL.
 
-Imagine que tu es un épicier qui vend des bonbons (options SPX) :
-	•	S’il fait chaud (marché calme) → Peu de clients → Prix bas.
-	•	S’il fait froid (marché stressé) → Beaucoup de clients → Prix haut.
-	•	Le but est d’anticiper la météo (volatilité future) pour fixer les bons prix avant les autres !
+---
 
-💡 Notre solution :
-⿡ Prédire la volatilité avec Deep Learning + Rough Heston (prévoir la météo).
-⿢ Utiliser ces prévisions pour ajuster dynamiquement les prix des options.
-⿣ Optimiser la stratégie de market making pour toujours faire du profit.
+## 🔹 Déroulé du projet (Méthodologie Structurée)
 
-⸻
+### 🎯 Étape 1 : Modélisation Probabiliste de la Volatilité avec Rough Heston
 
-🔹 3. Déroulé du projet (Méthodologie Structurée)
+📌 **Objectif** : Simuler l’évolution des prix des options en fonction de la volatilité.
 
-💡 Notre projet se divise en 4 étapes :
+🛠 **Méthodes utilisées** :
+- ✅ Modèle **Rough Heston** pour simuler la volatilité du marché.
+- ✅ Monte Carlo accéléré (**Numba/PyTorch**) pour générer des trajectoires de prix.
+- ✅ Vérification empirique : Comparaison avec la volatilité réelle.
 
-🎯 Partie 1 : Modélisation Probabiliste de la Volatilité avec Rough Heston
+🔹 **Impact** :
+✔ Mieux comprendre et anticiper la volatilité future.
+✔ Fournir une base solide pour le market making.
 
-📌 Objectif : Simuler et comprendre comment évolue la volatilité du marché.
-📌 Pourquoi ? La volatilité influence directement les prix des options et le market making.
+---
 
-🛠 Méthodes utilisées :
-✅ Modèle Rough Heston pour simuler l’évolution des prix des options SPX.
-✅ Monte Carlo accéléré (Numba/PyTorch) pour calculer les trajectoires de prix.
-✅ Vérification empirique : Comparer avec la volatilité réelle du marché.
+### 🎯 Étape 2 : Prédiction de la Volatilité avec Deep Learning
 
-💡 Ce que ça apporte au projet ?
-	•	Permet de mieux comprendre et anticiper la volatilité future.
-	•	Fournit une base solide pour optimiser le market making.
+📌 **Objectif** : Améliorer la précision des prévisions en combinant IA et finance quantitative.
 
-⸻
+🛠 **Méthodes utilisées** :
+- ✅ **LSTM** (Long Short-Term Memory) pour capter les tendances temporelles.
+- ✅ **Transformers** (GPT, BERT) pour détecter les changements brusques de volatilité.
+- ✅ **Feature Engineering avancé** sur les surfaces de volatilité historiques.
 
-🎯 Partie 2 : Prédiction de la Volatilité avec Deep Learning
+🔹 **Impact** :
+✔ Prédictions plus précises de la volatilité future.
+✔ Stratégie de market making plus réactive et optimisée.
 
-📌 Objectif : Améliorer les prévisions en utilisant des modèles IA avancés.
-📌 Pourquoi ? Rough Heston est puissant mais ne capture pas toutes les dynamiques → On ajoute du Machine Learning !
+---
 
-🛠 Méthodes utilisées :
-✅ LSTM (Long Short-Term Memory) pour capter les tendances temporelles.
-✅ Transformers (GPT, BERT) pour mieux prédire les changements soudains de volatilité.
-✅ Feature Engineering avancé sur les surfaces de volatilité historiques.
+### 🎯 Étape 3 : Stratégie de Market Making Adaptatif (Théorie des Jeux)
 
-💡 Ce que ça apporte au projet ?
-	•	Prédictions plus précises de la volatilité future.
-	•	Stratégie de market making mieux informée et plus optimisée.
+📌 **Objectif** : Optimiser le bid-ask spread pour maximiser les profits tout en minimisant le risque.
 
-⸻
+🛠 **Méthodes utilisées** :
+- ✅ **Minimisation du regret** pour ajuster dynamiquement les quotes.
+- ✅ **Optimisation Gamma/Vega Hedging** pour limiter l’exposition aux variations de volatilité.
+- ✅ **Backtesting** sur des marchés réels (SPX, Binance, IBKR API).
 
-🎯 Partie 3 : Stratégie de Market Making Adaptatif (Théorie des Jeux)
+🔹 **Impact** :
+✔ Réduction des pertes en ajustant dynamiquement les spreads.
+✔ Augmentation des gains grâce à une gestion intelligente du risque.
 
-📌 Objectif : Optimiser le bid-ask spread pour capturer du PnL sans risque excessif.
-📌 Pourquoi ? Un market maker fixe des prix en permanence → doit s’adapter en temps réel aux conditions du marché.
+---
 
-🛠 Méthodes utilisées :
-✅ Minimisation du regret (Théorie des jeux) pour ajuster dynamiquement les quotes.
-✅ Optimisation du Gamma/Vega Hedging pour limiter l’exposition aux variations de volatilité.
-✅ Backtesting sur des marchés réels (SPX, Binance, IBKR API).
+### 🎯 Étape 4 : Backtest et Optimisation
 
-💡 Ce que ça apporte au projet ?
-	•	Réduction des pertes en ajustant dynamiquement les spreads.
-	•	Augmentation des gains grâce à une meilleure gestion du risque.
+📌 **Objectif** : Vérifier la robustesse de notre stratégie sur données réelles.
 
-⸻
+🛠 **Méthodes utilisées** :
+- ✅ **QuantConnect / Backtrader** pour tester la stratégie sur des données historiques.
+- ✅ **Connexion API (Interactive Brokers / Binance)** pour tester en live.
+- ✅ **Optimisation des hyperparamètres** pour améliorer la rentabilité.
 
-🎯 Partie 4 : Backtest et Optimisation
+🔹 **Impact** :
+✔ Validation empirique de la stratégie.
+✔ Amélioration continue via des tests sur différents marchés.
 
-📌 Objectif : Vérifier la robustesse de notre stratégie en conditions réelles.
-📌 Pourquoi ? Une bonne stratégie doit fonctionner sur des données réelles avant d’être utilisée.
+---
 
-🛠 Méthodes utilisées :
-✅ QuantConnect / Backtrader pour tester notre stratégie sur des données historiques.
-✅ Connexion API (Interactive Brokers / Binance) pour tester en conditions réelles.
-✅ Optimisation des hyperparamètres pour améliorer la rentabilité.
+## 🔥 Pourquoi ce projet est une pépite pour un Hedge Fund ?
 
-💡 Ce que ça apporte au projet ?
-	•	Validation empirique de la stratégie.
-	•	Amélioration continue via des tests sur différents marchés.
+✅ Utilisation de modèles avancés (**Rough Heston + IA**) prisés en finance quantitative.
+✅ Application directe au **trading d’options et au market making**.
+✅ Stratégie scalable et automatisable pour des environnements réels.
 
-⸻
+📌 **Résumé en une phrase pour ton CV** :
+> *Développement d’un algorithme hybride combinant Rough Heston et Deep Learning pour la prédiction de volatilité et l’optimisation des quotes en market making sur options SPX.*
 
-🔹 4. Pourquoi ce projet est une pépite pour un hedge fund ?
+---
 
-✅ Utilisation de modèles avancés (Rough Heston + IA), ce qui impressionne les fonds quantitatifs.
-✅ Application directe au trading d’options et au market making, un domaine clé pour les hedge funds.
-✅ Stratégie scalable et automatisable, pouvant être exploitée dans un environnement réel.
+## 🚀 Conclusion
 
-🔥 🚀 Résumé du projet en une phrase pour ton CV :
-“Développement d’un algorithme hybride combinant Rough Heston et Deep Learning pour la prédiction de volatilité et l’optimisation des quotes en market making sur options SPX.”
+📌 **Pourquoi ce projet est PARFAIT pour un sujet académique et en finance de marché ?**
+✔ Il respecte **toutes les exigences académiques** (probabilisme, IA, théorie des jeux).
+✔ Il est **applicable en trading réel** (marché options SPX, Binance, IBKR).
+✔ Il **combine des techniques avancées rarement exploitées ensemble**.
+✔ Il permet de **tester une vraie stratégie algorithmique et d’optimiser le PnL**.
 
-⸻
+👨‍💻 **Prochaines étapes** :
+- 📥 **Collecte des données d’options SPX**.
+- 📊 **Implémentation du modèle Rough Heston**.
+- 🧠 **Entraînement du modèle Deep Learning**.
+- 💰 **Backtest et exécution de la stratégie en temps réel**.
 
-📌 Conclusion
-
-💡 Pourquoi ce projet est PARFAIT pour ton sujet académique et pour impressionner un hedge fund ?
-✅ Il respecte les critères académiques (programmation probabiliste, IA, théorie des jeux).
-✅ Il est applicable en finance réelle (marchés options SPX, Binance, IBKR).
-✅ Il combine des techniques avancées rarement exploitées ensemble.
-✅ Il permet de tester une vraie stratégie algorithmique et de générer du PnL.
-
-🚀 Tu veux que je te prépare un premier notebook avec la simulation Rough Heston et la collecte des données d’options SPX ? 🔥
+🚀 **Prêt à transformer cette idée en algo gagnant ?** 🔥
